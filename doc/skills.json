@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Deep Learning",
+        "items": [
+            {
+                "name": "PyTorch",
+                "rate": 4.5
+            },
+            {
+                "name": "NumPy",
+                "rate": 3
+            }
+        ]
+    },
+    {
+        "name": "Programming",
+        "items": [
+            {
+                "name": "Python",
+                "rate": 4.5
+            },
+            {
+                "name": "C/C++",
+                "rate": 3
+            },
+            {
+                "name": "JavaScript",
+                "rate": 2
+            }
+        ]
+    },
+    {
+        "name": "Language",
+        "items": [
+            {
+                "name": "Mandarin",
+                "rate": 5
+            },
+            {
+                "name": "English",
+                "rate": 2
+            },
+            {
+                "name": "Cantonese",
+                "rate": 1
+            }
+        ]
+    }
+]

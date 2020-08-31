@@ -50,14 +50,17 @@
                 <h3>Education</h3>
               </div>
               <div class="md-layout-item md-size-80 md-small-size-100">
-                <div class="wrapper">
-                  <el-timeline :reverse="true">
-                    <el-timeline-item v-for="(p, pid) in education" :key="pid">
-                      <el-card>
-                        <span class="markdown-body" v-html="p.intro" />
-                      </el-card>
-                    </el-timeline-item>
-                  </el-timeline>
+                <div
+                  v-for="(p, pid) in education"
+                  :key="pid"
+                  class="md-layout post"
+                >
+                  <div class="md-layout-item md-size-35 md-small-size-100">
+                    <img :src="p.image" class="img-raised rounded pic" />
+                  </div>
+                  <div class="md-layout-item md-size-65 md-small-size-100">
+                    <span class="markdown-body" v-html="p.intro" />
+                  </div>
                 </div>
               </div>
             </div>

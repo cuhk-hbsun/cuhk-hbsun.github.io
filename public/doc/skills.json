@@ -4,18 +4,10 @@
         "items": [
             {
                 "name": "PyTorch",
-                "rate": 5
-            },
-            {
-                "name": "Caffe",
-                "rate": 5
+                "rate": 4.5
             },
             {
                 "name": "NumPy",
-                "rate": 3.5
-            },
-            {
-                "name": "CUDA",
                 "rate": 3
             }
         ]
@@ -24,32 +16,32 @@
         "name": "Programming",
         "items": [
             {
-                "name": "C/C++",
-                "rate": 5
-            },
-            {
                 "name": "Python",
-                "rate": 5
+                "rate": 4.5
             },
             {
-                "name": "JAVA",
+                "name": "C/C++",
                 "rate": 3
             },
             {
                 "name": "JavaScript",
-                "rate": 2.5
+                "rate": 2
             }
         ]
     },
     {
-        "name": "Overwatch",
+        "name": "Language",
         "items": [
             {
-                "name": "Widowmaker",
+                "name": "Mandarin",
                 "rate": 5
             },
             {
-                "name": "Hanzo",
+                "name": "English",
+                "rate": 2
+            },
+            {
+                "name": "Cantonese",
                 "rate": 1
             }
         ]

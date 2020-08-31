@@ -1,4 +1,4 @@
-#### RobustScanner: Dynamically Enhancing Positional Clues for Robust Text Recognition
-###### <u>Xiaoyu Yue</u>, Zhanghui Kuang, Chenhao Lin, Hongbin Sun, Wayne Zhang
-ECCV 2020 
-###### [[PDF]](https://arxiv.org/pdf/2007.07542.pdf) [[CODE]](www.github.com)
+#### SCAN: Self-and-Collaborative Attention Network for Video Person Re-identification
+###### Ruimao Zhang, <u>Hongbin Sun</u>, Jingyu Li, Yuying Ge, Liang Lin, Ping Luo, Xiaogang Wang
+IEEE Transactions on Image Processing 2019
+###### [[PDF]](https://arxiv.org/pdf/1807.05688.pdf)

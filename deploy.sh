@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 
-rm -rf dist
+rm -rf dist &&
 
 # build
-npm run build
+npm run build &&
+
+mkdir dist -p &&
 
 cp CNAME ./dist/
 
@@ -21,4 +23,4 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:yuexy/yuexy.github.io.git master:gh-pages
+git push -f git@github.com:cuhk-hbsun/cuhk-hbsun.github.io.git master:gh-pages

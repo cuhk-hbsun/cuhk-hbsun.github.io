@@ -47,6 +47,25 @@
             <hr />
             <div class="md-layout">
               <div class="md-layout-item md-size-20 md-small-size-100">
+                <h3>Education</h3>
+              </div>
+              <div class="md-layout-item md-size-80 md-small-size-100">
+                <div class="wrapper">
+                  <el-timeline :reverse="true">
+                    <el-timeline-item v-for="(p, pid) in education" :key="pid">
+                      <el-card>
+                        <span class="markdown-body" v-html="p.intro" />
+                      </el-card>
+                    </el-timeline-item>
+                  </el-timeline>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <hr />
+            <div class="md-layout">
+              <div class="md-layout-item md-size-20 md-small-size-100">
                 <h3>Publications</h3>
               </div>
               <div class="md-layout-item md-size-80 md-small-size-100">
@@ -153,6 +172,7 @@ export default {
       user_intro: "",
       user_header: "doc/header.jpg",
       user_link: {},
+      education: [],
       publications: [],
       experience: [],
       skills: []
@@ -161,7 +181,7 @@ export default {
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/image.jpg")
+      default: require("@/assets/img/bg3.jpg")
     },
     img: {
       type: String,
@@ -189,6 +209,14 @@ export default {
         _this.user_link = data.data.link;
         axios.get(data.data.intro).then(intro => {
           _this.user_intro = markDownIt.render(intro.data);
+        });
+      });
+      axios.get("doc/education.json").then(data => {
+        data.data.forEach(element => {
+          _this.education.push(element);
+          axios.get(element.intro).then(intro => {
+            element.intro = markDownIt.render(intro.data);
+          });
         });
       });
       axios.get("doc/publications.json").then(data => {

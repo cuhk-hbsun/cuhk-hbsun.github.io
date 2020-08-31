@@ -1,4 +1,4 @@
-#### HOSE-Net: Higher Order Structure Embedded Network for Scene Graph Generation
-###### Meng Wei, Chun Yuan, <u>Xiaoyu Yue</u>, Kuo Zhong
-ACM MM 2020
-###### [[PDF]](https://arxiv.org/abs/2008.05156)
+#### RobustScanner: Dynamically Enhancing Positional Clues for Robust Text Recognition
+###### Xiaoyu Yue, Zhanghui Kuang, Chenhao Lin, <u>Hongbin Sun</u>, Wayne Zhang
+ECCV 2020
+###### [[PDF]](https://arxiv.org/pdf/2007.07542.pdf) [[CODE]](www.github.com)

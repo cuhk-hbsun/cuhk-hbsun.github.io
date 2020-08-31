@@ -1,2 +1,2 @@
-##### 2017.7 - Present
+##### 2018.8 - Present
 ##### Researcher, SenseTime.

@@ -47,6 +47,28 @@
             <hr />
             <div class="md-layout">
               <div class="md-layout-item md-size-20 md-small-size-100">
+                <h3>News</h3>
+              </div>
+              <div class="md-layout-item md-size-80 md-small-size-100">
+                <div
+                  v-for="(p, pid) in news"
+                  :key="pid"
+                  class="md-layout post"
+                >
+                  <div class="md-layout-item md-size-35 md-small-size-100">
+                    <img :src="p.image" class="img-raised rounded pic" />
+                  </div>
+                  <div class="md-layout-item md-size-65 md-small-size-100">
+                    <span class="markdown-body" v-html="p.intro" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <hr />
+            <div class="md-layout">
+              <div class="md-layout-item md-size-20 md-small-size-100">
                 <h3>Education</h3>
               </div>
               <div class="md-layout-item md-size-80 md-small-size-100">
@@ -175,6 +197,7 @@ export default {
       user_intro: "",
       user_header: "doc/header.jpg",
       user_link: {},
+      news: [],
       education: [],
       publications: [],
       experience: [],
@@ -216,7 +239,7 @@ export default {
       });
       axios.get("doc/news.json").then(data => {
         data.data.forEach(element => {
-          _this.education.push(element);
+          _this.news.push(element);
           axios.get(element.intro).then(intro => {
             element.intro = markDownIt.render(intro.data);
           });

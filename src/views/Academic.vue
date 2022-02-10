@@ -214,6 +214,14 @@ export default {
           _this.user_intro = markDownIt.render(intro.data);
         });
       });
+      axios.get("doc/news.json").then(data => {
+        data.data.forEach(element => {
+          _this.education.push(element);
+          axios.get(element.intro).then(intro => {
+            element.intro = markDownIt.render(intro.data);
+          });
+        });
+      });
       axios.get("doc/education.json").then(data => {
         data.data.forEach(element => {
           _this.education.push(element);

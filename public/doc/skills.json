@@ -4,11 +4,11 @@
         "items": [
             {
                 "name": "PyTorch",
-                "rate": 4.5
+                "rate": 5
             },
             {
                 "name": "NumPy",
-                "rate": 3
+                "rate": 3.5
             }
         ]
     },
@@ -17,32 +17,15 @@
         "items": [
             {
                 "name": "Python",
-                "rate": 4.5
-            },
-            {
-                "name": "C/C++",
-                "rate": 3
-            },
-            {
-                "name": "JavaScript",
-                "rate": 2
-            }
-        ]
-    },
-    {
-        "name": "Language",
-        "items": [
-            {
-                "name": "Mandarin",
                 "rate": 5
             },
             {
-                "name": "English",
-                "rate": 2
+                "name": "C/C++",
+                "rate": 2.5
             },
             {
-                "name": "Cantonese",
-                "rate": 1
+                "name": "JavaScript",
+                "rate": 2.5
             }
         ]
     }

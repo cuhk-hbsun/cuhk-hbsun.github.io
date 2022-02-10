@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Deep Learning",
+        "items": [
+            {
+                "name": "PyTorch",
+                "rate": 5
+            },
+            {
+                "name": "NumPy",
+                "rate": 3.5
+            }
+        ]
+    },
+    {
+        "name": "Programming",
+        "items": [
+            {
+                "name": "Python",
+                "rate": 5
+            },
+            {
+                "name": "C/C++",
+                "rate": 2.5
+            },
+            {
+                "name": "JavaScript",
+                "rate": 2.5
+            }
+        ]
+    }
+]
